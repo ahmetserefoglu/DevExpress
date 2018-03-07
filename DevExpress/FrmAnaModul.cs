@@ -143,5 +143,15 @@ namespace DevExpress
             }
         }
 
+        FrmStoklar frmStoklar;
+        private void BtnStoklar_ItemClick(object sender, XtraBars.ItemClickEventArgs e)
+        {
+            if (frmStoklar == null)
+            {
+                frmStoklar = new FrmStoklar();
+                frmStoklar.MdiParent = this;
+                frmStoklar.Show();
+            }
+        }
     }
 }
